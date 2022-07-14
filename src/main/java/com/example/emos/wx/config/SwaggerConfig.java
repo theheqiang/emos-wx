@@ -4,7 +4,6 @@ import io.swagger.annotations.ApiOperation;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import springfox.documentation.builders.ApiInfoBuilder;
-import springfox.documentation.builders.ParameterBuilder;
 import springfox.documentation.builders.PathSelectors;
 import springfox.documentation.builders.RequestHandlerSelectors;
 import springfox.documentation.service.ApiInfo;
@@ -20,16 +19,11 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Author: EdisonHo
- * Date: 2022-07-14
- */
 @Configuration
 @EnableSwagger2
 public class SwaggerConfig {
-
     @Bean
-    public Docket createRestApi(){
+    public Docket createRestApi() {
         Docket docket = new Docket(DocumentationType.SWAGGER_2);
         ApiInfoBuilder builder = new ApiInfoBuilder();
         builder.title("EMOS在线办公系统");
@@ -58,5 +52,4 @@ public class SwaggerConfig {
 
         return docket;
     }
-
 }

@@ -7,7 +7,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 @Slf4j
-@MapperScan("com.example.emos.wx.db.dao")
 public class EmosWxApiApplication {
 
     public static void main(String[] args) {
