@@ -20,6 +20,6 @@ public class TestController {
     @PostMapping("/sayhello")
     @ApiOperation("the ever more easy method of testing")
     public R sayHello(@Valid @RequestBody TestSayHelloForm form){
-        return R.ok().put("message","Hello" + form.getName());
+        return R.ok().put("message","Hello," + form.getName());
     }
 }
