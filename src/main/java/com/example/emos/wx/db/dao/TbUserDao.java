@@ -11,4 +11,6 @@ import java.util.Set;
 @Mapper
 public interface TbUserDao {
     boolean haveRootUser();
+
+    int insert(HashMap param);
 }
